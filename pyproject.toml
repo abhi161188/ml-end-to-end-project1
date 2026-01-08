@@ -4,4 +4,25 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.8"
-dependencies = []
+dependencies = [
+    "catboost>=1.2.8",
+    "ipykernel>=6.29.5",
+    "matplotlib>=3.7.5",
+    "numpy>=1.24.4",
+    "pandas>=2.0.3",
+    "scikit-learn>=1.3.2",
+    "seaborn>=0.13.2",
+    "xgboost>=2.1.4",
+]
+
+[dependency-groups]
+dev = [
+    "matplotlib>=3.7.5",
+    "ml-end-to-project1",
+    "numpy>=1.24.4",
+    "pandas>=2.0.3",
+    "seaborn>=0.13.2",
+]
+
+[tool.uv.sources]
+ml-end-to-project1 = { workspace = true }
