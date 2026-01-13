@@ -11,4 +11,5 @@ wheels/
 logs/
 Krish/
 .DS_Store
-artifacts/
+#artifacts/
+#catboost_info/
